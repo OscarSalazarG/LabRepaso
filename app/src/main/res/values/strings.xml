@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">LabRepaso</string>
+    <string name="tvLogin">Login</string>
+    <string name="tvUser">Usuario</string>
+    <string name="tvPassWord">Contraseña</string>
+    <string name="btnLogin">Ingresar</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>
