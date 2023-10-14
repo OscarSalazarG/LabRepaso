@@ -3,23 +3,28 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
-
+    app:startDestination="@id/navDiv">
     <fragment
-        android:id="@+id/navigation_home"
-        android:name="com.example.labrepaso.ui.home.HomeFragment"
-        android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
-
+        android:id="@+id/navDiv"
+        android:name="com.example.labrepaso.ui.DivFragment"
+        android:label="fragment_div"
+        tools:layout="@layout/fragment_div" >
+        <action
+            android:id="@+id/action_navDiv_to_navEdad"
+            app:destination="@id/navEdad" />
+    </fragment>
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="com.example.labrepaso.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
-
+        android:id="@+id/navEdad"
+        android:name="com.example.labrepaso.ui.EdadFragment"
+        android:label="fragment_edad"
+        tools:layout="@layout/fragment_edad" >
+        <action
+            android:id="@+id/action_navEdad_to_navCont"
+            app:destination="@id/navCont" />
+    </fragment>
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="com.example.labrepaso.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navCont"
+        android:name="com.example.labrepaso.ui.ContactosFragment"
+        android:label="fragment_contactos"
+        tools:layout="@layout/fragment_contactos" />
 </navigation>
